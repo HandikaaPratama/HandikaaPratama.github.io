@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/53eeb31113.js" crossorigin="anonymous"></script>
+    <title>PortoFolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2>HANDIKA.</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">PortoFolio</a></li>
+                    <li><a href="#portofolio">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Front End Development</p>
+                <h1>Hi, I'm <span>Handika</span><br>From XI RPL 2</h1>
+            </div>
+        </div>
+    </div>
+<!-- ------------about------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="helmi1.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Siswa SMK PLUS PELITA NUSANTARA memiliki kemampuan di Bidang dasar pembuatan serta dasar Desain Grafis dari sebuah Website</p>
+
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br></li>
+                            <li><span>CSS</span><br></li>
+                            <li><span>JavaScript</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SDN</span><br>Harapan Baru III</li>
+                            <li><span>SMP</span><br>SMPN Negeri 21 Kota Bekasi</li>
+                            <li><span>SMK</span><br>SMK PLUS Pelita Nusantara</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -----------Project-------------- -->
+<div id="project">
+    <h1 class="sub-title"><i>My Hobby</i></h1>
+    <div class="project-list">
+        <div>
+            <i class="fa-brands fa-readme"></i>
+            <h2>Membaca Novel</h2>
+        </div>
+        <div>
+            <i class="fa-solid fa-person-swimming"></i>
+            <h2>Berenang</h2>
+        </div>
+        <div>
+            <i class="fa-solid fa-volleyball"></i>
+            <h2>Volly</h2>
+        </div>
+    </div>
+</div>
+<!-- ---------------Portofolio----------- -->
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title"><i>My Project</i></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="project.png">
+                <div class="layer">
+                    <h2>Website Pembayaran SPP</h2>
+                    <p>Sebuah Website tentang Pembayaran SPP dengan Menggunakan : <br>PHP, CSS, JS</p>
+                  
+                </div>
+            </div>
+            <div class="work">
+                <img src="Pembayaran SPP - Google Chrome 2_2_2024 7_36_58 PM.png">
+                <div class="layer">
+                    <h2>Website Sekolah</h2>
+                    <p>Membuat Website tentang Jurusan PKM (Perbankan Keuangan Mikro) di SMK Plus Pelita Nusantara dengan Menggunakan : <br>HTML, CSS</br></p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="PROJECT and 1 more page - Work - Microsoft​ Edge 1_31_2024 9_25_08 AM.png">
+                <div class="layer">
+                    <h2>Web E-Commerce</h2>
+                    <p>Membuat Website E-Commerce dengan Menjual Mobil Bekas, Website ini Menggunakan:<br>HTML, CSS, JS</br></p>
+                    
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- ---------------Contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ddepan292@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>+62 878-8406-0702</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/profile.php?id=100057164924302"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/hndk.prt_098/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@handikapratama4388/featured"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1v-H5eW3UllgdO_oVgIQiPrgiWmFCINuj/view?usp=drive_link" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">Hello</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>COPYRIGHT. Handika Pratama, Made With <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-square-js"></i></p>
+    </div>
+</div>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
